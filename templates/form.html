@@ -1,0 +1,70 @@
+<!-- 
+The form.html provides a web form where users can input their
+payment information, including name, email, address, and Credit 
+card details. Once the form is submitted successfully it will
+go to the thankyou.html.
+
+@author (Maddie Hirschfeld)
+@version (May 25, 2024)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PayChain</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>PayChain</h1>
+    <h2>Enter Transaction Details</h2>
+    <form id="transactionForm" action="{{ url_for('submit') }}" method="post">
+      <!--Name-->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <!--Email-->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <!--Street Address-->
+      <label for="street">Street Address:</label>
+      <input type="text" id="street" name="street" required />
+      <!--Street Address 2-->
+      <label for="street2">Street Address 2 (optional):</label>
+      <input type="text" id="street2" name="street2" />
+      <!--City-->
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required />
+      <!--State-->
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required />
+      <!--ZipCode-->
+      <label for="zipcode">Zip Code:</label><br />
+      <input type="text" id="zipcode" name="zipcode" required />
+      <!--Credit Card Number-->
+      <label for="cc_number">Credit Card Number:</label>
+      <input type="text" id="cc_number" name="cc_number" required />
+      <!--Expiration-->
+      <label for="expiration">Expiration Date (MM/YY):</label>
+      <input type="text" id="expiration" name="expiration" required />
+      <!--CVV-->
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" required />
+
+      <!--Submit Button-->
+      <div class="button-container">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <script src="static/script.js"></script>
+  </body>
+</html>

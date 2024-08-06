@@ -1,0 +1,102 @@
+/*
+Provides CSS styles for the form.html, thankyou.html, and 
+transactions.html.
+
+@author (Maddie Hirschfeld)
+@version (May 26, 2024)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*COLOR PALETTE*/
+:root {
+    --c-green: #00bf7d; /*#222*/
+    --c-turq: #00b4c5; /*#222*/
+    --c-lightblue: #0073e6; /*#ffff*/
+    --c-blue: #2546f0; /*#fff*/
+    --c-purple:#5928ed; /*#fff*/
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: var(--c-blue);
+}
+
+h1 {
+    font-family: Chakra Petch, Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    border-radius: .2rem;
+}
+
+h2 {
+    padding: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    max-width: 30rem;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: .55rem;
+    margin: .55rem 0;
+    box-sizing: border-box;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+input[type="submit"] {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--c-green);
+    color: #222;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    color: #222;
+    background-color: #fff;
+    padding: 2rem;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+td {
+    padding: 1rem;
+}

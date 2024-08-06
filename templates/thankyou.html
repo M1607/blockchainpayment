@@ -1,0 +1,27 @@
+<!-- 
+The thankyou.html provides a web page that confirms a payment
+after the user successfully inputs their payment information 
+and submits the form on form.html.
+
+@author (Maddie Hirschfeld)
+@version (May 25, 2024)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thank You</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>PayChain</h1>
+    <h2 id="thankyou">Thank You for Your Purchase!</h2>
+  </body>
+</html>
